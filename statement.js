@@ -17,11 +17,11 @@ function statement (invoice, plays) {
   result += `You earned ${volumeCredits} credits\n`;
   return result;
 
-  function volumeCreditsFor(aPerf) {
-    let volumeCredits = 0;
-    volumeCredits += Math.max(aPerf.audience - 30, 0);
-    if ("comedy" === playFor(aPerf).type) volumeCredits += Math.floor(aPerf.audience / 5);
-    return volumeCredits;
+  function volumeCreditsFor(aPerformance) {
+    let result = 0;
+    result += Math.max(aPerformance.audience - 30, 0);
+    if ("comedy" === playFor(aPerformance).type) result += Math.floor(aPerformance.audience / 5);
+    return result;
   }
 
   function playFor(aPerformance) {
