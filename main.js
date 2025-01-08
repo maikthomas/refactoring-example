@@ -1,6 +1,6 @@
 const invoices = require('./invoices.json');
 const plays = require('./plays.json');
-const statement = require('./statement');
+const { statement } = require('./statement');
 
 function main() {
   invoices.forEach((invoice) => {

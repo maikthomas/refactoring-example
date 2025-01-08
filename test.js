@@ -1,7 +1,8 @@
 const assert = require('node:assert')
 const invoices = require('./invoices.json');
 const plays = require('./plays.json');
-const statement = require('./statement');
+const { statement } = require('./statement');
+
 const expectedOutput =
 `Statement for BigCo
   Hamlet: $650.00 (55 seats)

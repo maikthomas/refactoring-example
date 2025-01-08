@@ -39,4 +39,7 @@ function usd(aNumber) {
                         minimumFractionDigits: 2 }).format(aNumber/100);
 }
 
-module.exports = statement;
+module.exports = {
+  htmlStatement,
+  statement,
+};
